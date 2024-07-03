@@ -6,3 +6,4 @@
 <p>link: https://viajamais-phi.vercel.app/</p>
 
 # Imagens do protótipo
+![Captura de tela 2024-07-02 223105](https://github.com/GalazziJ/galazzij.github.io/assets/141592359/2a7067f0-ca43-4233-a83b-9262181721d3)
