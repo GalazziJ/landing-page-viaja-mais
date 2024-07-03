@@ -1,37 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viaja+ | Landing page</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/script.js" defer></script>
+    <link rel="icon" href="./img/plane-departure-solid.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+
+  <body>
     <!-- Navbar -->
     <nav>
-        <div class="nav-header">
-            <!-- Nav logo -->
-            <div class="nav-brand">
-                <a href="">Viaja+</a>
-            </div>
-            <div class="nav-menu-btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+      <div class="nav-header">
+        <!-- Nav logo -->
+        <div class="nav-brand">
+          <a href="">Viaja+</a>
         </div>
-        <!-- menu -->
-        <ul class="nav-links">
-            <li><a href="">Destino</a></li>
-            <li><a href="">Pacotes</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Sobre</a></li>
-            <li><a href="">Contato</a></li>
-        </ul>
-        <div class="nav-btns">
-            <button class="btn-login">Login</button>
-            <button class="btn-cadastro">Cadastre-se</button>
+        <div class="nav-menu-btn" id="menu-btn">
+          <i class="fa-solid fa-bars"></i>
         </div>
+      </div>
+      <!-- menu -->
+      <ul class="nav-links" id="nav-links">
+        <!-- Adiciona o ID aqui -->
+        <li><a href="">Destino</a></li>
+        <li><a href="">Pacotes</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Sobre</a></li>
+        <li><a href="">Contato</a></li>
+      </ul>
+      <div class="nav-btns">
+        <button class="btn login">Login</button>
+        <button class="btn cadastro">Cadastre-se</button>
+      </div>
     </nav>
-</body>
+
+    <header class="header-container">
+      <div class="header-img">
+        <div class="header-img-card header-img-card-1">
+          <span><i class="fa-solid fa-hotel"></i></span>
+          Reserva de hotel
+        </div>
+        <div class="header-img-card header-img-card-2">
+          <span><i class="fa-solid fa-passport"></i></span>
+          Passagens de avião
+        </div>
+        <div class="header-img-card header-img-card-3">
+          <span><i class="fa-solid fa-map-location-dot"></i></span>
+          Eventos locais
+        </div>
+        <div class="header-img-card header-img-card-4">
+          <span><i class="fa-solid fa-magnifying-glass-location"></i></span>
+          Guia de turismo
+        </div>
+        <img src="./img/Travelers-pana.svg" alt="" srcset="" />
+      </div>
+      <div class="header-content">
+        <h1>
+          Seu próximo destino está <br />
+          a um <span>voo</span> de distância
+        </h1>
+        <p>
+          Reserve seu voo agora e descubra novos horizontes com a Viaja+. <br>
+          Garanta seu assento hoje e comece sua próxima grande aventura!
+        </p>
+
+        <form>
+          <div class="input-row">
+            <div class="input-group">
+              <h5>Destino</h5>
+              <div>
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <input type="text" placeholder="Paris, França" />
+              </div>
+            </div>
+            <div class="input-group">
+              <h5>Data</h5>
+              <div>
+                <span><i class="fa-solid fa-calendar-days"></i></span>
+                <input type="text" placeholder="22 de Julho de 2024" />
+              </div>
+            </div>
+          </div>
+          <button>Procurar</button>
+        </form>
+        <div class="bar">
+          Jamille Galazi &copy; | Todos os direitos reservados
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
